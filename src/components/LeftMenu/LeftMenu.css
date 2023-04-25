@@ -1,0 +1,290 @@
+.left-menu {
+  margin: 1rem;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+    rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+  width: 300px;
+  position: absolute;
+  z-index: 2;
+}
+
+.bar-container {
+  position: relative;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  align-items: center;
+  padding: 4px 8px;
+  border-radius: 10px;
+  box-sizing: border-box;
+}
+.bar-container-top {
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+    rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+  z-index: 3;
+  border-radius: 0;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.bar-container-down {
+  background-color: rgb(231, 231, 231);
+  width: 98%;
+  margin-bottom: 15px;
+  margin-top: 1rem;
+  border-right: 5px solid #414141;
+}
+.main-title {
+  margin: 0;
+}
+
+.logo-container {
+  margin-right: 10px;
+  background-color: #414141;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 7px;
+}
+.top-logo-container {
+  margin-right: 10px;
+  width: 35px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #f38c2b;
+}
+.logo-container-individual {
+  border-radius: 23px;
+}
+.logo-container-individual.active {
+  background-color: #ffffff;
+  border: 2px solid #73e22a;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em,
+    rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em,
+    rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+}
+.solar.active {
+  background-color: rgba(255, 0, 0, 0.096);
+  border: 1px solid #f00;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em,
+    rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em,
+    rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+}
+.logo-container-individual.solar.active {
+  background-color: #f00;
+  border: 1px solid #f00;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em,
+    rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em,
+    rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+}
+.logo-container-individual.solar.active:hover {
+  background-color: rgb(177, 0, 0);
+  border: 1px solid #f00;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em,
+    rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em,
+    rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+}
+.logo-container-individual.solar:hover {
+  background-color: #f00;
+  border: 1px solid #f00;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em,
+    rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em,
+    rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+}
+.wind.active {
+  background-color: rgba(51, 173, 255, 0.096);
+  border: 2px solid #33afff; 
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em,
+    rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em,
+    rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+}
+.logo-container-individual.wind.active {
+  background-color: #33afff;
+  border: 2px solid #33afff;  
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em,
+    rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em,
+    rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+}
+.logo-container-individual.wind.active:hover {
+  background-color: #226fa3;
+  border: 2px solid #33afff;  
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em,
+    rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em,
+    rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+}
+.logo-container-individual.wind:hover {
+  background-color: #33afff;
+  border: 1px solid #33afff;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em,
+    rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em,
+    rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+}
+
+
+.text-container {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  font-size: 16px;
+  line-height: 1.2;
+}
+
+.text-container h2 {
+  margin: 0;
+  font-size: 15px;
+  font-weight: 700;
+}
+.text-container p {
+  margin: 0;
+  font-size: 12px;
+}
+
+.collapse-button {
+  top: 15px;
+  right: 20px;
+  height: 30px;
+  width: 30px;
+  border-radius: 15px;
+  background-color: rgb(255, 255, 255);
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.2s ease-out;
+  margin-left: 5px;
+  border: 1px solid #91919180;
+}
+
+.collapse-button-active {
+  background-color: #73e22a;
+  transform: rotate(180deg);
+}
+.collapse-button-placing {
+  background-color: #414141;
+  color: white;
+}
+.collapse-div {
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.collapse-icons {
+  height: 130px;
+  text-align: center;
+}
+.collapse-icons p {
+  margin-top: 1rem;
+  font-size: 25px;
+}
+
+.button-active {
+  background-color: #414141;
+  color: white;
+}
+
+/* BUTTONS */
+button {
+  border: none;
+}
+.collapse-button:hover {
+  background-color: #414141;
+  color: white;
+}
+
+.layer-button {
+  border: none;
+  height: 34px;
+  width: 34px;
+  cursor: pointer;
+  border-radius: 17px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5px 10px;
+}
+
+.layer-button:hover {
+  background-color: #414141;
+  color: white;
+}
+.buttons {
+  display: flex;
+  margin-top: 20px;
+}
+
+.bar-container-individual {
+  background-color: rgb(231, 231, 231);
+  width: 95%;
+  border-radius: 200px;
+  margin-bottom: 15px;
+}
+
+.divider {
+  font-size: 25px;
+  font-weight: 100;
+  margin-bottom: 5px;
+  margin-right: 10px;
+}
+.collapsed-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.container-individual p {
+  font-size: 12px;
+}
+.container-individual h2 {
+  font-size: 12px;
+}
+
+.expand-container {
+  overflow: hidden;
+  max-height: 0;
+  transition: all 0.25s ease-in-out;
+}
+
+.expand-container.show {
+  max-height: 1000px;
+  width: 100%;
+  /* overflow:auto; */
+}
+.expand-container.hide {
+  max-height: 0;
+  transition: all 0.2s ease;
+  width: 100%;
+}
+
+.details {
+  font-size: 14px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* width: 50%; */
+  margin: 0 auto 2rem;
+  border-radius: 10px;
+}
+.details p {
+  margin: 0;
+}
+
+.module-eye-icon {
+  background-color: inherit;
+  height: 20px;
+  width: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.logo-container-main.active {
+  background-color: #b64848;
+}
